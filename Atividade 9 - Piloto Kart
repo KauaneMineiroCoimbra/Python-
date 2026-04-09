@@ -1,0 +1,12 @@
+# Atividade 9 - Piloto Kart
+print("Atividade 9: Piloto Kart")
+tamanho_pista = float(input("Tamanho da pista em metros: "))
+voltas = int(input("Número de voltas: "))
+tempo_primeira = float(input("Tempo da primeira volta em segundos: "))
+
+distancia_total = (tamanho_pista * voltas)/1000
+previsao_min = (tempo_primeira * voltas)/60
+
+print("Distância total: " + str(round(distancia_total,2)) + " km")
+print("Previsão de conclusão: " + str(round(previsao_min,1)) + " minutos\n")
+
