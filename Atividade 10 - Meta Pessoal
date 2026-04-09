@@ -1,0 +1,19 @@
+
+# Atividade 10 - Meta Pessoal
+print("Atividade 10: Meta Pessoal")
+meta = input("Descrição da meta: ")
+valor_meta = float(input("Valor necessário: "))
+salario = float(input("Salário mensal: "))
+despesas = float(input("Despesas mensais: "))
+
+saldo = salario - despesas
+reserva = saldo * 0.3
+valor_mensal_meta = saldo - reserva
+meses = valor_meta / valor_mensal_meta
+
+print("Meta:", meta, "(R$ " + str(valor_meta) + ")")
+print("Salário: R$ " + str(salario) + ", Despesas: R$ " + str(despesas))
+print("Saldo após despesas: R$ " + str(round(saldo,2)))
+print("Reserva fixa (30%): R$ " + str(round(reserva,2)))
+print("Valor disponível para a meta: R$ " + str(round(valor_mensal_meta,2)) + " por mês")
+print("Prazo estimado: " + str(round(meses,2)) + " meses")
