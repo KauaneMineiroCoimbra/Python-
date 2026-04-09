@@ -1,0 +1,9 @@
+
+# Atividade 1 - Apresentar estudante
+nome = input("Digite seu nome: ")
+curso = input("Digite seu curso: ")
+semestre = input("Digite seu semestre atual: ")
+hobby = input("Digite seu hobby favorito: ")
+
+print("Prazer, eu sou a " + nome + "!")
+print("Atualmente estou no " + semestre + "º semestre de " + curso + " e meu hobby favorito é " + hobby + ".\n")
