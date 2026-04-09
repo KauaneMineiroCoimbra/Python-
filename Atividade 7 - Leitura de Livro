@@ -1,0 +1,9 @@
+# Atividade 7 - Leitura de Livro
+print("Atividade 7: Você lê rápido?")
+nome_leitor = input("Digite seu nome: ")
+livro = input("Digite o nome do livro: ")
+paginas = int(input("Digite o total de páginas: "))
+tempo_segundos = float(input("Tempo de leitura por página em segundos: "))
+
+tempo_total_horas = (paginas * tempo_segundos) / 3600
+print(nome_leitor + ", você finalizará o livro " + livro + " em aproximadamente " + str(round(tempo_total_horas,2)) + " horas.\n")
