@@ -1,0 +1,8 @@
+# Atividade 4 - Compra no Exterior
+print("Atividade 4: Compra no Exterior")
+valor_real = float(input("Digite o valor em reais:.2f"))
+cotacao_dolar = 5.42
+valor_dolar = valor_real / cotacao_dolar
+
+print("Valor em real R$ " + str(valor_real))
+print("Valor em dólar $ " + str(round(valor_dolar,2)) + "\n")
