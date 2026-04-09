@@ -1,0 +1,13 @@
+# Atividade 5 - Compra Online
+print("Atividade 5: Compra Online")
+nome_cliente = input("Digite seu nome: ")
+valor_compra = float(input("Digite o valor da compra: "))
+desconto = float(input("Digite o desconto em %: "))
+
+valor_final = valor_compra * (1 - desconto / 100)
+
+print("Olá " + nome_cliente + ", sua compra de R$ " + str(valor_compra) + " foi confirmada!")
+print("Foi aplicado um desconto de " + str(desconto) + "%")
+print("O total final ficou em R$ " + str(round(valor_final,2)) + "\n")
+
+
