@@ -1,0 +1,32 @@
+# Atividade 2 - Churrasco
+print("Atividade 2: Churrasco de Domingo")
+pessoas = int(input("Quantas pessoas vão participar? "))
+
+# Quantidade por pessoa em kg
+carne_por_pessoa = 0.3
+linguica_por_pessoa = 0.2
+frango_por_pessoa = 0.15
+
+# Preços por kg
+preco_carne = 50
+preco_linguica = 28
+preco_frango = 22
+
+# Calcular quantidade total
+carne_total = pessoas * carne_por_pessoa
+linguica_total = pessoas * linguica_por_pessoa
+frango_total = pessoas * frango_por_pessoa
+
+# Calcular custo
+custo_carne = carne_total * preco_carne
+custo_linguica = linguica_total * preco_linguica
+custo_frango = frango_total * preco_frango
+custo_total = custo_carne + custo_linguica + custo_frango
+
+# Valor por pessoa
+valor_por_pessoa = custo_total / pessoas
+
+print("Quantidades:")
+print("Carne: " + str(carne_total) + " kg, Linguiça: " + str(linguica_total) + " kg, Frango: " + str(frango_total) + " kg")
+print("Custo total: R$", custo_total)
+print("Cada pessoa deve pagar: R$", round(valor_por_pessoa, 2), "\n")
