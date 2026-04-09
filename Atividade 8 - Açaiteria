@@ -1,0 +1,21 @@
+ # Atividade 8 - Açaiteria
+print("Atividade 8: Açaiteria")
+acai_p = int(input("Quantos Açaí pequeno? "))
+acai_m = int(input("Quantos Açaí médio? "))
+acai_g = int(input("Quantos Açaí grande? "))
+desconto_acai = float(input("Desconto em %: "))
+
+preco_p = 13.5
+preco_m = 15
+preco_g = 17.5
+
+total_acai = (acai_p*preco_p + acai_m*preco_m + acai_g*preco_g)
+total_desconto = total_acai * (1 - desconto_acai/100)
+
+print("Seu pedido foi registrado:")
+print("- Açaí P:", acai_p)
+print("- Açaí M:", acai_m)
+print("- Açaí G:", acai_g)
+print("Desconto de", desconto_acai, "% aplicado")
+print("Total R$", round(total_desconto,2), "\n")
+
