@@ -1,0 +1,8 @@
+# Atividade 6 - IMC
+print("Atividade 6: IMC")
+nome_pessoa = input("Digite seu nome: ")
+peso = float(input("Digite seu peso (kg): "))
+altura = float(input("Digite sua altura (m): "))
+
+imc = peso / (altura * altura)
+print(nome_pessoa + ", seu IMC é de " + str(round(imc,2)) + "\n")
